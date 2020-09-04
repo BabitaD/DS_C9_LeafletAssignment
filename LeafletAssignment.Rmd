@@ -1,0 +1,23 @@
+---
+title: "Leaflet Assignment"
+author: "Babita"
+date: "4 September 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r message=FALSE,warning=FALSE}
+library(leaflet)
+library(shiny)
+```
+```{r}
+my_map <- leaflet() %>% 
+          addTiles() %>% 
+          addMarkers(lat=21.636182, lng= 79.232332, popup="Pench National Park")
+my_map
+
+```
+
